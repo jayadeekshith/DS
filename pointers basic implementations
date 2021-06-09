@@ -1,0 +1,54 @@
+#include <bits/stdc++.h>
+// basic questions on pointers
+using namespace std;
+// these are functions used in below brograms
+// the all inputs are in each line 
+
+void printfun(int *a){
+    cout<<*a<<endl;
+}
+int main()
+{
+ //   Write a program to print the address of a variable whose value is input from user.
+
+    int i;
+    cin>>i;
+    cout<<&i<<endl;
+// Write a program to print the address of the pointer to a variable whose value is input from user.
+int j;
+cin>>j;
+int*p=&i;
+cout<<p<<endl;
+
+    //Write a program to print the value of the address of the pointer to a variable whose value is input from user.
+    int k;
+    cin>>k;
+    int* q=&k;
+    cout<<&q<<endl;
+//Write a program to print a number which is entered from keyboard using pointer.
+int l;
+int *r=&l;
+cin>>*r;
+cout<<*r<<endl;
+//Write a function which will take pointer and display the number on screen.
+//Take number from user and print it on screen using that function.
+  int m;
+  cin>>m;
+  printfun(&m);  
+
+    
+ //Write a program to find out the greatest
+ //and the smallest among three numbers using pointers.   
+int a,b,c;
+cin>>a>>b>>c;
+int *s=&a, *t=&b, *u=&c;
+if(*s> *t && *s > *u){
+    cout<<"a is great"<<endl;
+}
+else if(*t > *s && *t > *u){
+    cout<<"b is great"<<endl;
+}
+    else
+    cout<<"c is great"<<endl;
+}
+           
